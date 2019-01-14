@@ -8,6 +8,14 @@ Debug_Build
 __history
 RTKLib.pro.user
 
+# visual studio
+*.sdf
+*.suo
+*.user
+*.filters
+Debug
+Release
+
 brd/
 build/
 data/

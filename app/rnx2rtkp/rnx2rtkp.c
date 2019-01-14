@@ -77,7 +77,7 @@ extern int showmsg(char *format, ...)
 {
     va_list arg;
     va_start(arg,format); vfprintf(stderr,format,arg); va_end(arg);
-    fprintf(stderr,"\r");
+    fprintf(stderr,"\n");
     return 0;
 }
 extern void settspan(gtime_t ts, gtime_t te) {}
@@ -186,6 +186,6 @@ int main(int argc, char **argv)
     }
     ret=postpos(ts,te,tint,0.0,&prcopt,&solopt,&filopt,infile,n,outfile,"","");
     
-    if (!ret) fprintf(stderr,"%40s\r","");
+    if (!ret) fprintf(stderr,"%40s\n","");
     return ret;
 }

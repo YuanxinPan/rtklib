@@ -1675,7 +1675,7 @@ extern int adjgpsweek(int week)
 extern unsigned int tickget(void)
 {
 #ifdef WIN32
-    return (unsigned int)timeGetTime();
+    return 0;/*return (unsigned int)timeGetTime();*/ /*modified for win32 compile*/ /*yxpan*/
 #else
     struct timespec tp={0};
     struct timeval  tv={0};
