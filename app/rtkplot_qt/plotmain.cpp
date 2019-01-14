@@ -538,7 +538,8 @@ void Plot::dropEvent(QDropEvent *event)
 void Plot::MenuOpenSol1Click()
 {
     trace(3,"MenuOpenSol1Click\n");
-    
+
+    // ReadSol(QStringList(QDir::toNativeSeparators(QFileDialog::getOpenFileName(this,tr("Open Solution 1"),QString(),tr("Solution File (*.pos *.stat *.nmea *.txt *.ubx);;All (*.*)"),nullptr,QFileDialog::DontUseNativeDialog))),0);
     ReadSol(QStringList(QDir::toNativeSeparators(QFileDialog::getOpenFileName(this,tr("Open Solution 1"),QString(),tr("Solution File (*.pos *.stat *.nmea *.txt *.ubx);;All (*.*)")))),0);
 }
 // callback on menu-open-solution-2 -----------------------------------------

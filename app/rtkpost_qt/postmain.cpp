@@ -842,6 +842,7 @@ void MainForm::ExecProc(void)
     if (TimeUnitF->isChecked()) thread->tu=TimeUnit->text().toDouble()*3600.0;
 
     thread->prcopt=prcopt_default;
+    thread->solopt=solopt_default;
     if (!GetOption(thread->prcopt,thread->solopt,thread->filopt)) {ProcessingFinished(0);return;}
 
     // set input/output files
