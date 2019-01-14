@@ -768,7 +768,7 @@ static int statexfile(file_t *file, char *msg)
 static int readfile(file_t *file, unsigned char *buff, int nmax, char *msg)
 {
     struct timeval tv={0};
-    /*fd_set rs;*/
+    fd_set rs;
     unsigned long fpos_8B;
     unsigned int t,tick,fpos_4B;
     long pos,n;

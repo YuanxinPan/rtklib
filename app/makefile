@@ -3,7 +3,7 @@
 #
 
 BINDIR = /usr/local/bin
-DIRS   = pos2kml str2str rnx2rtkp convbin rtkrcv
+DIRS   = rnx2rtkp # pos2kml str2str convbin rtkrcv
 
 all:
 	@for i in $(DIRS); do make -C $$i/gcc; done
