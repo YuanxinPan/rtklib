@@ -43,7 +43,6 @@ app/strsvr_qt/
 *.sdf
 *.suo
 *.user
-*.filters
 Debug
 Release
 
